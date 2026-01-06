@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#container{
+    height: 200px;
+    width: 800px;
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: brown;
+}
+#box3{
+    background-color: aquamarine;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: chartreuse;
+}
+/*================================================================================================*/
+
+/* #container{ 
+    display: flex;  >flexbox:It is a one-dimensional layout method for arranging items in rows or columns which is done my using flex in display, has main and cross axis(simple x and y-axis)
+    ===flex-direction:It sets how flex items are placed in the flex container, along which axis and direction===
+    flex-direction: row;  >row(default):main-axis(left to right)
+    flex-direction: row-reverse;  >row-reverse:main-axis(R to L); here div box start from right to left
+    flex-direction: column;  >column:main-axis(top to bottom); note: bcz of display:flex the div adjust its size acc. to container
+    height: 50px;  >here the div size is limited to the text size
+    flex-direction: column-reverse;  >column:main-axis(B to T); here div box start form bottom to top
+} */
+
+/* #container{
+    display: flex;
+    flex-direction: row;
+
+    ***Flex properties for Flex Container***
+    ===justify-container:alignment along the main axis.===
+
+    justify-content: flex-start;  >start of the main axis.here main axis is row(L to R)
+    justify-content: flex-end;  >end of the main axis.here main axis is row(L to R); its not like row-reveser as the box stay in the original position
+    justify-content: center;
+    justify-content: space-evenly;  >same space btn every box and container
+    justify-content: space-around;  >equal space around each box
+    justify-content: space-between;  >same space btn every box but no space with container; if you try with one div then "no space with container" depends with the felx direction, here its row so no space on left with container
+} */
+
+/* #container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    === flex-wrap: Controls whether flex items stay on one line or wrap onto multiple lines when there isn’t enough space===
+
+    flex-wrap:nowrap; >All flex items stay on a single line (default).
+    flex-wrap:wrap ; >Flex items wrap onto multiple lines from top to bottom. 
+    flex-wrap: wrap-reverse; >Flex items wrap onto multiple lines from bottom to top.
+} */
+
+/* #container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    === align-items: how flex items are aligned along the cross-axis (perpendicular to the main axis) ===
+    
+    align-items:stretch; >Stretches items to fill the container (default).
+    align-items: flex-start; >Aligns items at the start of the cross-axis.
+    align-items: flex-end; >Aligns items at the end of the cross-axis.
+    align-items: center; >Centers items along the cross-axis.
+    align-items: baseline; >Aligns items based on their text baseline.
+                [ use this to see align-item: baseline
+                    #box1{
+                        background-color: aqua;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                    }
+                ]
+} */
+
+/* div{
+    height: 100px;
+    width: 150px;
+}
+#box2{
+    height: 200px;
+}
+#box3{
+    height: 75px;
+}
+#container{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ===align-contenct: Controls the spacing and alignment of flex lines along the cross-axis when there is extra space (works only when flex-wrap is enabled).=== 
+    flex-wrap: wrap;
+    align-content: center;
+    align-content: flex-start; >contain are packed at the start. 
+    align-content: flex-end
+    align-content: space-between >contain are evenly spaced with no space at edge
+    align-content: space-around >Equal space around each line
+    align-content: space-evenly; >Equal space between and around lines.
+    align-content: stretch(default)
+
+} */
+
+
+

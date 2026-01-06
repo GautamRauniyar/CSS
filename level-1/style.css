@@ -1,0 +1,49 @@
+/*level-1*/
+*{ /*universal selector*/
+    color: pink; 
+}
+h1{ /*element selector*/
+    color: brown;
+}
+button{
+    color: blue;
+    background-color: black;
+}
+body{
+    background-color: rgb(55, 0, 107);
+}
+h3{
+    color: #0000ff;
+}
+#helloThere_5{ /*ID selector*/
+    color: rgb(201, 0, 201);
+}
+.myClass{ /*class selector or h3,p{ color: red; }*/ 
+    color: rgb(255, 153, 0);
+}
+#box{
+    background-color: blue;
+}
+
+h5{
+    text-align: center;
+    text-decoration: red wavy overline; /*underline/ overline/ line-through; know more in "mdn text-decoration" */
+}
+#forText{
+    text-align: start; /*start=left, end=right alignment*/
+    text-transform: capitalize; /*uppercase/ lowercase/ capitalize/ none*/
+    font-weight: 400; /*normal/ bold/ bolder/ lighter/ range:lightest:100 to darkest:900*/
+    font-family: 'cursive','Times New Roman',Arial, sans-serif; /*font style; We write multiple font styles so that if the browser doesn’t recognize one font, it can use another font from the list that it supports; as fall back mechanism: if one fails it will choose other; Two types: generic and specific font family*/
+    font-size: normal; /*or; 25px,37px....*/
+    line-height: 40px; /*gap between lines of the paragraph*/
+}
+a{
+    text-decoration: none; /*underline/ overline/ line-through*/
+}
+#outer{
+    font-size: 25px; /*units:absolute(pixels(px)), 1 inch=96px*/
+}
+#inner{
+    font-size: 10px;
+}
+

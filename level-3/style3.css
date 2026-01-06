@@ -1,0 +1,100 @@
+#box1{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    font-size: 10px;
+}
+#box2{
+    height:50px;
+    width: 30%; /*%: x% of the parient box(for this parient width) */
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em; /*em: x time of parent box(for this font size)*/
+    /*width: 5rem; rem: x time of root element(like: elements on html tag,body tag...)(here hello is the root element)*/
+    /*height: 20vh; vh(viweport height): % related to website height */
+    /*width: 20vh; vw(viweport width): % related to website width */
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    display: inline-block;
+}
+#box3{
+    position: static; /*static: it fixed the position no position change can be done(LRTB and Z-index will not work); default position*/
+    left: 10px; /*will not work due to static*/
+}
+#box4{
+    position: relative; /*relative: position will change to itself(LRTBZ) will work */
+    left: 20px;
+}
+#box5{
+    position: absolute;/*absolute: position will change acc. to its closest positioned(non-static) ancestor(parent element or parent of parent element....) in this case box5 parient element is body*/
+    top: 50px;
+}
+#box6{
+    position: fixed;/*fixed: position will change relative to browser and THE POSITION WILL ALWAYS FIXED EVEN IF WE SCROOL DOWN THE BOX WILL STAY*/
+    right: 50px;
+    top:0;
+}
+#box7{
+    position: sticky;/*sticky: position based on user scroll position */
+    top:0;
+}
+.boxs{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+/*overlapping*/
+#box9{
+    position:relative;
+    right: 40px;
+    top:5px
+}/*since box8 comes before box9 it will go under the box9 ie:box9 comes over box8*/
+
+#box10{
+    position:relative;
+    left:50px;
+    top:5px;
+}/*though box10 comes before box11 its comes over the box11 bcz box11 is by default static if we do box11 position:relatice then box10 goes under the box11 */
+/* #box11{
+    position: relative;
+} */
+
+#box12{
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+    z-index: -1; /*Overlapping elements with a larger z-index cover those with a smaller one. z-index:auto(0) and z-index will not work on static position*/
+}
+#box13{
+    position: relative;
+    z-index: 1;
+}
+#box14{
+    position: relative;
+    top: 5px;
+    right: 30px;
+}
+
+#box15{
+    background-image: url("unsplash.jpg");
+    background-size: cover;/*cover: cover the whole space and fit the image*/
+}
+#box16{
+    background-image: url("unsplash.jpg");
+    background-size: contain;/*contain: display the whole image and also cover the space by repeating the image*/
+}
+#box17{
+    background-image: url("unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;/*it will not repeat the image and shows the bg color*/
+}
+#box18{
+    background-image: url("unsplash.jpg");
+    background-size: auto;/*its a by default size which is usually not in use*/
+}

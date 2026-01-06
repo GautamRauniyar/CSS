@@ -1,0 +1,69 @@
+/*Box model in css
+    1.height:set the hight of the content 
+    2.width:set the width of the content
+    3.border
+    4.padding
+    5.mergin
+*/
+div{
+    /* height and width are used to creat the box */
+    height: 100px; /*by defalut height is of one line*/
+    width: 150px; /*by defalut width is of whole screen*/
+    background-color:pink;/*pink area shows the content area define by height and width*/
+
+    border-style: solid; /*dotted/ dashed*/
+    border-width: 10px;
+    border-color: aquamarine;
+    /*boarder shorthand: boarder:width style color*/
+    /*border:10px solid aquamarine */
+
+    /*margin: used to create space between two element*/
+    margin-top: 50px;
+    margin-right: 50px;
+    /*margin shorthand*/
+    /*margin:100px; {100px margin from TRBL}*/
+    /*margin: 10px 20px 30px 40px TRBL-clockwise*/
+
+
+}
+
+h1{
+    height: 50px; 
+    width: 200px; 
+    background-color:aqua;
+
+    border: 5px dashed rgb(255, 127, 127);
+    text-align: right; /* This shift right the text inside the box, not the whole page */
+}
+
+#border_corner{
+    height: 50px; 
+    width: 200px; 
+    background-color:bisque;
+    border: 5px solid rgb(255, 127, 127);
+    border-radius: 10px;/*used to round the corner of the box*/
+}
+h2{
+    /* To make a circular border, set the height and width to the same value (creates a square), then apply border-radius: 50%. */
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+}
+h3{
+    height: 50px; 
+    width: 150px; 
+    background-color:aqua;
+    border: 5px solid rgb(255, 127, 127);
+
+    /*padding:space from box border; left right top bottom*/
+    /* padding-left: 25px;
+    padding-right:10px;
+    padding-top: 10px; */
+
+    /*padding shorthand*/
+    /*padding:50px {50px padding from TRBL}*/
+    padding:1px 2px 3px 4px; /*TRBL-clockwise*/
+    margin: 10px 20px 30px 40px;
+}
