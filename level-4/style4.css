@@ -94,28 +94,90 @@ div{
 }
 #box2{
     height: 200px;
-}
-#box3{
+} */
+/* #box3{
     height: 75px;
-}
-#container{
+} */
+/* #container{
     height: 600px;
     width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    ===align-contenct: Controls the spacing and alignment of flex lines along the cross-axis when there is extra space (works only when flex-wrap is enabled).=== 
-    flex-wrap: wrap;
-    align-content: center;
+    /* align-items: center; */
+    /* ===align-contenct: Controls the spacing and alignment of flex lines along the cross-axis when there is extra space (works only when flex-wrap is enabled).===  */
+    /* flex-wrap: wrap; */
+    /* align-content: center;
     align-content: flex-start; >contain are packed at the start. 
     align-content: flex-end
     align-content: space-between >contain are evenly spaced with no space at edge
     align-content: space-around >Equal space around each line
     align-content: space-evenly; >Equal space between and around lines.
     align-content: stretch(default)
+}*/
 
+/* === align-self: alignment of individual along the cross axis (Highest priority) === */
+/* #box2{
+    height: 200px;
+    align-self: flex-end;
+}
+#box5{
+    align-self:flex-end;
 } */
 
+/* ===flex-grow : how much a flex item will grow relative to the rest of the flex items if space is available */
+/* ===flex-shrink : how much a flex item will shrink relative to the rest of the flex items if space is available */
+/* #container{
+    height: 300px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div{
+    height: 100px;
+    width: 50px;
+}
+#box2{
+    height: 200px;
+    flex-shrink: 2; >shrink with the factor of 2
+    flex-shrink: 0; >0 will allow the felx item not to shink anyhow
 
+    flex-grow: 2;
+}
+#box1{
+    flex-grow: 1;
+} */
+
+/* === media queries: Help create a responsive website === */
+#media{
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+}
+@media(width: 160px){ 
+    #media{
+        background-color:purple;
+    }
+}
+@media(max-width: 300px){
+    #media{
+        background-color:green;
+    }
+}
+@media(min-width: 300px) and (max-width: 400px){
+    #media{
+        background-color:pink;
+    }
+}
+@media(min-width: 400px) and (max-width: 600px){
+    #media{
+        background-color:red;
+    }
+}
+@media(min-width: 600px){
+    #media{
+        background-color:blue;
+    }
+}
 

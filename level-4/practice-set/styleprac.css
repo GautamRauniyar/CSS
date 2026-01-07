@@ -1,0 +1,32 @@
+.navbar{
+    background-color: brown;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: azure;
+    
+}
+li{
+    list-style: none;
+    display: inline;  
+}
+
+.parent{
+    border: 2px solid black;
+    height:400px;
+    width: 400px;
+    display: flex;
+    justify-content: center; /*main axis centre*/
+    align-items: center; /*cross axis centre*/
+}
+#box{
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    /* ===to make TEXT centre === */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
