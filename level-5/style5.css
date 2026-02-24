@@ -1,0 +1,101 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border:2px solid black;
+    /*transition:transition between two states of an element.*/
+    transition-property: all; /*in which CSS property you want trnsition like font-size,width etc*/
+    transition-duration: 2s; /*how long the transition takes(eg:in 2sec transition effect is complete)*/
+    transition-timing-function: steps(5); /*Controls the speed curve of the transition*/
+    transition-delay: 1s; /*a delay before the transition starts*/
+
+    /*transition shorthand: property_name duration  timing-function  delay*/
+    transition: all 2s ease-in 1s;
+
+    /*rotate*/
+    position:absolute;
+    top: 100px;
+    left: 100px;
+    /* rotate: x 180deg; */
+    /*rotate: y 90deg;*/ /*not showing anything bcz the box is straight to the y-axis*/
+    /* rotate: z 45deg; */
+
+    /*scale*/
+    /*transform: scale(0.5);*/ /*scale(): scale on both x and y-axis*/
+    /*transform: scaleX(2);*/ /*scale on x-axis*/
+    /*transform: scaleY(2);*/ /*scale on y-axis*/ /*there is also for 3d z-axis*/
+}
+
+div:hover{ /* :hover is psudo class. there are many states, can see in mdn*/
+    background-color: brown;
+    color: aliceblue;
+    font-size:20px;
+    /*transform: rotate(180deg)*/ ;/*we can use rotate and scale in the element also like hover*/
+    /* transform: scale(2); */
+
+    /*tarnslate: move the element*/
+    /*transform: translate(200px);*/ /*move to the positive x-axis*/
+    /*transform: translateX(500px);*/ /*move to the positive x-axis*/
+    /*transform: translateX(-500px);*/ /*move to the negative x-axis*/
+    /*same for y-axis*/
+    /*transform: translateY(-100px);*/ /*this will move up though its (-)y-axis*/
+    /* transform: translate(100px,-80px); */ /*will move diagonal*/
+
+    /*skew: A CSS transform function that slants (tilts) an element along the X-axis, Y-axis, or both.*/
+    /* transform: skew(45deg); default to x-axis */
+    /* transform: skewx(45deg); */
+    /* transform: skewy(45deg); */
+
+}
+
+/*Animation*/
+#animation{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border:2px solid black;
+    position: absolute;
+    top: 300px;
+
+    /* animation-name: colorAnimation;
+    animation-duration: 0.25s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; any number or infinity */
+    /* animation-timing-function: ease-in;  */
+    
+    /*for positionAnimate*/
+    /* animation-name: positionAnimation;
+    animation-duration: 0.25s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; */
+    /*animation-direction: alternate-reverse; normal{from---> to},reverse{to---> from},alternate{from---> to--->from},alternate-reverse{to--->from--->too}*/
+
+    /*animation shorthand: keyframes_name duration timing-function delay iteration-cout direction*/
+    animation: combined 3s ease-in 4s infinite reverse ;
+
+}
+@keyframes colorAnimation {
+        from{background-color:red}
+        to{background-color: green}
+    }
+@keyframes positionAnimation {
+    from{left: 0px;}
+    to{left: 300px;}
+}
+
+@keyframes combined {
+    /*from*/0%{
+        left: 0px;
+        background-color: red;
+    }
+    55%{
+        background-color: green;
+        font-size: 150%;
+    }
+    /*to*/100%{
+        left: 500px;
+        background-color: blue;
+        color: white;
+    }
+    
+}
